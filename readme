@@ -1,1 +1,17 @@
+# Cisco Packet Tracer: VLAN & Trunking Lab
 
+🌐 Network Topology
+[Network Topology](vlan topology.png & trunking topology.png)
+
+## 📝 Project Overview
+This lab demonstrates how to configure Virtual Local Area Networks (VLANs) and 802.1Q Trunking to segment network traffic and improve security and efficiency on local area networks.
+
+## 🛠️ Key Configurations Implemented
+  VLAN Creation: Segmented network devices into distinct broadcast domains.
+  Access Port Assignment: Assigned specific switch ports to their respective VLANs.
+  802.1Q Trunking: Configured trunk ports between switches to allow traffic from multiple VLANs to pass through a single physical link.
+
+## 🚀 How to Run the Lab
+1. Download the `.pkt` file from this repository.
+2. Open it in **Cisco Packet Tracer**.
+3. Use the `ping` command or the PDU envelope tool to test connectivity between devices on the same VLAN.
