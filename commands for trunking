@@ -1,0 +1,63 @@
+"TRUNKING IN VLAN"
+
+switch0 commands:
+
+en
+conf t
+
+vlan 10
+name IT
+exit
+
+vlan 20
+name Sales
+exit
+
+int fa0/1
+switchport mode access
+switchport access vlan 10
+ex
+
+int fa0/2
+switchport mode access
+switchport access vlan 20
+exit
+
+int fa0/3
+switchport mode access
+switchport access vlan  10
+exit
+
+int fa0/4
+switchport mode trunk
+ex
+
+
+switch1:
+
+en
+conf t
+
+vlan 10
+name IT
+exit
+
+vlan 20
+name Sales
+exit
+
+int fa0/1
+switchport mode access
+switchport access vlan 20
+ex
+
+int fa0/2
+switchport mode access
+switchport access vlan 10
+exit
+
+int fa0/3
+switchport mode trunk
+ex
+
+ping the pc and check connectivity.
